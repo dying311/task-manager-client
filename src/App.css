@@ -1,0 +1,214 @@
+/* App.css */
+
+/* 全局样式 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 容器居中 */
+.task-container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #202123;
+  margin: 0;
+}
+
+/* 任务表单 */
+.task-form {
+  display: flex;
+  gap: 10px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.task-form input:focus {
+  border-color: #10a37f;
+}
+
+.task-form button {
+  padding: 12px 20px;
+  background-color: #10a37f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.task-form button:hover {
+  background-color: #0e8c6b;
+}
+
+/* 任务列表 */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background: #f1f2f4;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.task-item:hover {
+  background: #e9ebee;
+}
+
+.task-title {
+  flex: 1;
+  margin-left: 10px;
+  word-break: break-word;
+  font-size: 1rem;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-actions button {
+  padding: 6px 12px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.task-actions button:hover {
+  background-color: #4f46e5;
+}
+
+.task-actions button:last-child {
+  background-color: #ef4444;
+}
+
+.task-actions button:last-child:hover {
+  background-color: #dc2626;
+}
+
+/* 退出按钮 */
+.logout-button {
+  background-color: #e11d48;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.logout-button:hover {
+  background-color: #be123c;
+}
+
+/* 登录/注册页面 */
+.auth-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-container h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #202123;
+  margin: 0;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-container input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.auth-container input:focus {
+  border-color: #10a37f;
+}
+
+.auth-container button {
+  padding: 12px;
+  background-color: #10a37f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-container button:hover {
+  background-color: #0e8c6b;
+}
+
+.auth-container p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.auth-container a {
+  color: #6366f1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.auth-container a:hover {
+  color: #4f46e5;
+}
